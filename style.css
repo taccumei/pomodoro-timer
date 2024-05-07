@@ -1,0 +1,152 @@
+body{
+  background-color: rgb(183, 69, 69);
+  color: white;
+}
+
+/* TIMER SECTION */
+.container{
+  margin: 0 auto;
+  max-width: max-content;
+  text-align: center;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 60px;
+}
+
+.timer-wrapper{
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 300px;
+  width: 400px;
+  padding: 20px 40px;
+}
+
+.options button{
+  width: 125px;
+  text-transform: initial !important;
+  background-color: rgba(0,0,0,0.01);
+  padding: 5px 10px;
+  font-size: 18px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity .3s ease-in-out;
+}
+
+.enable {
+  background-color: rgba(0, 0, 0, 0.15) !important;
+  font-weight: bold;
+}
+
+.options{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer{
+  font-size: 120px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+button:hover{
+  opacity: .7;
+}
+
+#start, #pause{
+  background-color: white;
+  color: rgb(183, 69, 69);
+  font-weight: bold;
+  padding: 15px 70px;
+  font-size: 22px;
+  border-radius: 4px;
+  border: none;
+  text-transform: uppercase;
+  box-shadow: rgb(235, 235, 235) 0px 6px 0px ;
+  cursor: pointer;
+}
+
+#reset{
+  background-color: #7f8c8d;
+}
+
+/* TODO LIST SECTION */
+.todoList{
+  text-align: center;
+  margin: 0 auto;
+  height: 300px;
+  width: 400px;
+}
+
+/* Style the input */
+input {
+  border: none;
+  width: 80%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.002);
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+  font-weight: bold;
+}
+/* Style the "Add" button */
+.addBtn {
+  background: rgba(255, 255, 255, 0.02);
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+
+ul li{
+  cursor: pointer;
+  list-style-type: none;
+  font-size: 18px;
+  background-color: white;
+  color: black;
+  height: 20px;
+  font-weight: bold;
+  width: 400px;
+  padding: 20px 0 20px 0;
+  margin: 10px 0px;
+  border-radius: 5px;
+}
+
+ul{
+  padding-left: 0;
+  position: relative;
+}
+
+ul li:hover {
+  background: #ddd;
+}
+
+/* Add a "checked" mark when clicked on */ */
+ ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+} 
+
+/* Style the close button */
+span.close {
+  padding: 0 10px 0 0;
+  position: absolute;
+  right: 0px;
+}
+ 

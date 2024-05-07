@@ -4,8 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <!-- TIMER SECTION -->
+  <div class="container">
+    <h1 class="title">Pomodoro Timer</h1>
+    <div class="timer-wrapper">
+      <div class="options">
+        <button id="pomodoro" class="enable">Pomodoro</button>
+        <button id="shortBreak">Short Break</button>
+        <button id="longBreak">Long Break</button>
+      </div>
+      <p class="timer" id="timer">25:00</p>
+      <div class="button-wrapper">
+        <button id="start">Start</button>
+        <button id="pause" style="display:none;">Pause</button>
+        <button id="reset" hidden>Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TODO LIST SECTION -->
+  <div class="todoList">
+    <div id="myDIV" class="header">
+      <h2 style="margin:5px">Tasks</h2>
+      <input type="text" id="myInput" placeholder="What are you working on?">
+      <img onclick="newTask()" class="addBtn" src="images/plus.png"></span>
+      <hr>
+    </div>
+    
+    <ul id="myUL">
+      <li>Math 101</li>
+      <li class="checked">English 104</li>
+    </ul>
+  </div>
+  <script src="index.js"></script>
 </body>
 </html>
